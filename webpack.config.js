@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   mode: "development",
   output: {
     filename: "bundle.js",
@@ -26,7 +26,7 @@ module.exports = {
   },
   resolve: {
     // 생략 가능한 확장자
-    extensions: [".js", ".jsx", ".json"],
+    extensions: [".ts", ".js", ".jsx", ".json"],
   },
   module: {
     rules: [
